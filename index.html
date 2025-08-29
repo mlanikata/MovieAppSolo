@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieTicketPlus</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8e3a121e27.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section id="landing">
+      <div class="movie__background">
+        <figure class="movie__background__wrapper">
+          <div class="nav__content">
+            <div class="nav__left">
+              <figure class="nav__logo__wrapper">
+                <img src="assets/movielogo.png" alt="" class="nav__logo" />
+              </figure>
+              <a href="#home" class="nav__link nav__left">Home</a>
+              <a href="#contact" class="nav__link nav__left">Contact</a>
+            </div>
+            <div class="nav__right">
+                <div class="nav__input__wrapper">
+                     <input type="text" class="nav__input" placeholder="Find a movie" onkeydown="searchBarEnter(event)"/>
+                    <i class="fa-solid fa-magnifying-glass nav__search"onclick="searchActive()"
+                    aria-hidden="true"></i>
+              </div>
+              <i class="fa-solid fa-gear nav__settings" aria-hidden="true"></i>
+              </div>
+            </div>
+            <img src="assets/moviebackground.jpg" alt="" class="movie__background__img">
+            <div class="movie__background__text">
+                <h1 class="movie__background__title">Ticket<span class="textcolor__primary">+</span>
+                </h1>
+                <h4 class="movie__background__para">With over <span class="textcolor__primary">3000 </span>movies on Ticket<span class="textcolor__primary">+</span>, the possibilities are endless!</h4>
+                <div class="movie__background__main__search">
+                    <div class="movie__input__wrapper form__submit"> <input type="text" class="movie__input" placeholder="Find a movie"onkeydown="searchBarEnter(event)"><i
+                    class="fa-solid fa-magnifying-glass movie__search"
+                    onclick="searchBarClick()"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section id="movies">
+        <div class="container">
+            <div class="row">
+                <div class="movies__content">
+                    <div class="movies__search__results">
+                        <h2 class="movies__top__title">Search results for:</h2>
+                        <h2 class="movies__top__title__char">""</h2>
+                    </div>
+                    <div class="movies__list">
+                         <i class="fa-solid fa-spinner movies__list__loading" aria-hidden="true"></i>
+                         <div class="movie">
+                            <figure class="movie__img__wrapper">
+                               <img src="assets/poster.jpg" alt="" class="movie__img">
+                               <h3 class="movie__info__title">Guardians of the Galaxy Vol. 2</h3>
+                               <div class="movie__info__list">
+                                <div class="movie__info info__1">
+                                    <i class="fa-solid fa-clock movie__info__icon" aria-hidden="true"></i>
+                                    <p class="movie__info__text">136m</p>
+                                </div>
+                                <div class="movie__info info__2">
+                                    <i class="fa-solid fa-star movie__info__icon" 
+                                    aria-hidden="true"></i>
+                                    <p class="movie__info__text">4.5</p>
+                               </div>
+                               <div class="movie__info info__3">
+                                    <i class="fa-solid fa-earth-americas movie__info__icon"
+                                    aria-hidden="true"></i>
+                                    <p class="movie__info__text">English</p>
+                                </div>
+                                </div>
+                            </figure>
+                            <h4 class="movie__title">Guardians of the Galaxy Vol. 2</h4>
+                         </div>
+                         <div class="movie">
+                            <figure class="movie__img__wrapper">
+                                <img src="assets/poster2.jpg" alt="" class="movie__img">
+                                <h3 class="movie__info__title">The Avengers</h3>
+                                <div class="movie__info__list">
+                                    <div class="movie__info info__1">
+                                        <i class="fa-solid fa-clock movie__info__icon" aria-hidden="true"></i>
+                                    <p class="movie__info__text">136m</p>
+                                </div>
+                                <div class="movie__info info__2">
+                                    <i class="fa-solid fa-star movie__info__icon" 
+                                    aria-hidden="true"></i>
+                                    <p class="movie__info__text">4.5</p>
+                                </div>
+                                <div class="movie__info info__3">
+                                    <i class="fa-solid fa-earth-americas movie__info__icon"
+                                    aria-hidden="true"></i>
+                                    <p class="movie__info__text">English</p>
+                                </div>
+                                </div>
+                            </figure>
+                            <h4 class="movie__title">The Avengers</h4>
+                         </div>
+                         <div class="movie">
+                            <figure class="movie__img__wrapper">
+                                <img src="assets/poster3.jpg" alt="" class="movie__img">
+                                <h3 class="movie__info__title">Spider-Man: Homecoming</h3>
+                                <div class="movie__info__list">
+                                    <div class="movie__info info__1">
+                                        <i class="fa-solid fa-clock movie__info__icon" aria-hidden="true"></i>
+                                    <p class="movie__info__text">136m</p>
+                                </div>
+                                <div class="movie__info info__2">
+                                    <i class="fa-solid fa-star movie__info__icon" 
+                                    aria-hidden="true"></i>
+                                    <p class="movie__info__text">4.5</p>
+                                </div>
+                                <div class="movie__info info__3">
+                                    <i class="fa-solid fa-earth-americas movie__info__icon"
+                                    aria-hidden="true"></i>
+                                    <p class="movie__info__text">English</p>
+                                </div>
+                                </div>
+                            </figure>
+                            <h4 class="movie__title">Spider-Man: Homecoming</h4>
+                         </div>
+                         <div class="movie">
+                            <figure class="movie__img__wrapper">
+                                <img src="assets/poster4.jpg" alt="" class="movie__img">
+                                <h3 class="movie__info__title">Minions: Rise of Gru</h3>
+                                <div class="movie__info__list">
+                                    <div class="movie__info info__1">
+                                        <i class="fa-solid fa-clock movie__info__icon" aria-hidden="true"></i>
+                                    <p class="movie__info__text">136m</p>
+                                </div>
+                                <div class="movie__info info__2">
+                                    <i class="fa-solid fa-star movie__info__icon" 
+                                    aria-hidden="true"></i>
+                                    <p class="movie__info__text">4.5</p>
+                                </div>
+                                <div class="movie__info info__3">
+                                    <i class="fa-solid fa-earth-americas movie__info__icon"
+                                    aria-hidden="true"></i>
+                                    <p class="movie__info__text">English</p>
+                                </div>
+                                </div>
+                            </figure>
+                            <h4 class="movie__title">Minions: Rise of Gru</h4>
+                         </div>
+                         <div class="movie">
+                            <figure class="movie__img__wrapper">
+                                <img src="assets/poster5.jpg" alt="" class="movie__img">
+                                <h3 class="movie__info__title">Spider-Man: Into the Spider-Verse</h3>
+                                <div class="movie__info__list">
+                                    <div class="movie__info info__1">
+                                        <i class="fa-solid fa-clock movie__info__icon" aria-hidden="true"></i>
+                                    <p class="movie__info__text">136m</p>
+                                </div>
+                                <div class="movie__info info__2">
+                                    <i class="fa-solid fa-star movie__info__icon" 
+                                    aria-hidden="true"></i>
+                                    <p class="movie__info__text">4.5</p>
+                                </div>
+                                <div class="movie__info info__3">
+                                    <i class="fa-solid fa-earth-americas movie__info__icon"
+                                    aria-hidden="true"></i>
+                                    <p class="movie__info__text">English</p>
+                                </div>
+                                </div>
+                            </figure>
+                            <h4 class="movie__title">Spider-Man: Into the Spider-Verse</h4>
+                         </div>
+                         <div class="movie">
+                            <figure class="movie__img__wrapper">
+                                <img src="assets/poster6.jpg" alt="" class="movie__img">
+                                <h3 class="movie__info__title">Nope</h3>
+                                <div class="movie__info__list">
+                                    <div class="movie__info info__1">
+                                        <i class="fa-solid fa-clock movie__info__icon" aria-hidden="true"></i>
+                                    <p class="movie__info__text">136m</p>
+                                </div>
+                                <div class="movie__info info__2">
+                                    <i class="fa-solid fa-star movie__info__icon" 
+                                    aria-hidden="true"></i>
+                                    <p class="movie__info__text">4.5</p>
+                                </div>
+                                <div class="movie__info info__3">
+                                    <i class="fa-solid fa-earth-americas movie__info__icon"
+                                    aria-hidden="true"></i>
+                                    <p class="movie__info__text">English</p>
+                                </div>
+                                </div>
+                            </figure>
+                            <h4 class="movie__title">Nope</h4>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  </body>
+</html>
+`
