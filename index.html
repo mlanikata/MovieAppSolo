@@ -25,7 +25,7 @@
             </div>
             <div class="nav__right">
                 <div class="nav__input__wrapper">
-                     <input type="text" class="nav__input" placeholder="Find a movie" onkeydown="searchBarEnter(event)"/>
+                     <input type="text" class="nav__input" placeholder="Find a movie"/>
                     <i class="fa-solid fa-magnifying-glass nav__search"onclick="searchActive()"
                     aria-hidden="true"></i>
               </div>
@@ -38,7 +38,7 @@
                 </h1>
                 <h4 class="movie__background__para">With over <span class="textcolor__primary">3000 </span>movies on Ticket<span class="textcolor__primary">+</span>, the possibilities are endless!</h4>
                 <div class="movie__background__main__search">
-                    <div class="movie__input__wrapper form__submit"> <input type="text" class="movie__input" placeholder="Find a movie"onkeydown="searchBarEnter(event)"><i
+                    <div class="movie__input__wrapper form__submit"> <input type="text" class="movie__input" placeholder="Find a movie"><i
                     class="fa-solid fa-magnifying-glass movie__search"
                     onclick="searchBarClick()"
                     aria-hidden="true"
@@ -60,7 +60,7 @@
                         <h2 class="movies__top__title__char">""</h2>
                     </div>
                     <div class="movies__list" id="all-movies-list">
-                         <i class="fa-solid fa-spinner movies__list__spinner"></i>
+                         <i class="fa-solid fa-spinner movies__list__spinner"aria-hidden="true"></i>
                          <div class="movie">
                             <figure class="movie__img__wrapper">
                                <img src="assets/poster.jpg" alt="" class="movie__img">
