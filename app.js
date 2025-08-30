@@ -1,7 +1,7 @@
 
 
 
-async function searchMovies(searchTerm) 
+async function fetchMovies(searchTerm) 
 
     const response = await 
     
@@ -16,9 +16,10 @@ const movies = document.querySelector(".movies__list");
 
 const moviesHTML = array
 
-.map(
-    (movie) => `
-<div class="movie movie__invisible">
+
+
+ .map((movies) => {
+      return `<div class="movie movie__invisible">
 <figure class="movie__img__wrapper">
   <img src="${movie.Poster}" alt="" class="movie__img">
   <h3 class="movie__info__title">${movie.Title}</h3>
@@ -38,16 +39,11 @@ const moviesHTML = array
   </div>
 </figure>
 <h4 class="movie__title">${movie.Title}</h4>
-</div>`
-    
-)
-.join("");
-
- movies.innerHTML =
-    `<i class="fa-solid fa-spinner movies__list__loading movies__list__loading-visible"></i>` +
-    moviesHTML;
-
-  console.log('pending');
-)
+</div>`;
+    })
+    .join('');
 
 
+ moviesList.innerHTML = moviesHTML;
+
+``
